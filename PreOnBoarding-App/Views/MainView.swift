@@ -11,10 +11,10 @@ import SnapKit
 class MainView: UIView {
     
     let tableView: UITableView = {
-        let ctv = UITableView()
-        ctv.backgroundColor = .systemFill
+        let tv = UITableView()
+        tv.separatorStyle = .none
         
-        return ctv
+        return tv
     }()
     
     let button: UIButton = {
@@ -29,8 +29,8 @@ class MainView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .black
         setupStackView()
+        self.backgroundColor = .white
     }
     
     func setupStackView() {
@@ -50,7 +50,7 @@ class MainView: UIView {
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
             make.top.equalTo(safeAreaLayoutGuide)
-            make.height.equalTo(400)
+            make.height.equalTo(500)
         }
         button.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
