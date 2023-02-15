@@ -8,12 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var hi: String = "안녕하세요?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
