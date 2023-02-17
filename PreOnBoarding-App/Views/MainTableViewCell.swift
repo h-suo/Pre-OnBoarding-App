@@ -46,7 +46,7 @@ class MainTableViewCell: UITableViewCell {
         
         self.addSubview(loadImageView)
         self.addSubview(progressView)
-        self.addSubview(button)
+        self.contentView.addSubview(button)
         
         setConstraints()
     }

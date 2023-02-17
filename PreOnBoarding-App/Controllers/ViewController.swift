@@ -19,30 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detailView.tableView.delegate = self
-        detailView.tableView.dataSource = self
-        
-        detailView.tableView.rowHeight = 100
-        detailView.tableView.register(MainTableViewCell.self, forCellReuseIdentifier: "Cell")
-    }
-}
-
-extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        detailView.loadAllButton.addTarget(self, action: #selector(allLoadButtonTapped), for: .touchUpInside)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MainTableViewCell
-        cell.selectionStyle = .none
-        
-        return cell
+    @IBAction func allLoadButtonTapped(_ sender: UIButton) {
+        detailView.loadImageView.loadImage(link: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DF155EB6189BEC718D23EF4FA1A6348E51E9B5F7D84B3A994A9E2E2DC2B0B0FC/scale?width=1200&aspectRatio=1.78&format=jpeg")
     }
-    
-    
 }
-
-extension ViewController: UITableViewDelegate {
-    
-}
-
