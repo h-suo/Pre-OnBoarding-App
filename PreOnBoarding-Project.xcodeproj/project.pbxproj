@@ -13,6 +13,7 @@
 		450F8F2F29A0641B0095024C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450F8F2D29A0641B0095024C /* Main.storyboard */; };
 		450F8F3129A0641C0095024C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450F8F3029A0641C0095024C /* Assets.xcassets */; };
 		450F8F3429A0641C0095024C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450F8F3229A0641C0095024C /* LaunchScreen.storyboard */; };
+		450F8F3F29A067EC0095024C /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450F8F3E29A067EC0095024C /* LoadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		450F8F3029A0641C0095024C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450F8F3329A0641C0095024C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		450F8F3529A0641C0095024C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450F8F3E29A067EC0095024C /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		450F8F2629A0641B0095024C /* PreOnBoarding-Project */ = {
 			isa = PBXGroup;
 			children = (
-				450F8F2729A0641B0095024C /* AppDelegate.swift */,
-				450F8F2929A0641B0095024C /* SceneDelegate.swift */,
-				450F8F2B29A0641B0095024C /* ViewController.swift */,
+				450F8F3B29A067C10095024C /* Delegates */,
+				450F8F3D29A067DE0095024C /* Image */,
+				450F8F3C29A067CA0095024C /* Controllers */,
 				450F8F2D29A0641B0095024C /* Main.storyboard */,
 				450F8F3029A0641C0095024C /* Assets.xcassets */,
 				450F8F3229A0641C0095024C /* LaunchScreen.storyboard */,
 				450F8F3529A0641C0095024C /* Info.plist */,
 			);
 			path = "PreOnBoarding-Project";
+			sourceTree = "<group>";
+		};
+		450F8F3B29A067C10095024C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				450F8F2729A0641B0095024C /* AppDelegate.swift */,
+				450F8F2929A0641B0095024C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		450F8F3C29A067CA0095024C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				450F8F2B29A0641B0095024C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		450F8F3D29A067DE0095024C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				450F8F3E29A067EC0095024C /* LoadImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450F8F2C29A0641B0095024C /* ViewController.swift in Sources */,
+				450F8F3F29A067EC0095024C /* LoadImage.swift in Sources */,
 				450F8F2829A0641B0095024C /* AppDelegate.swift in Sources */,
 				450F8F2A29A0641B0095024C /* SceneDelegate.swift in Sources */,
 			);

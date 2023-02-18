@@ -38,6 +38,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Load">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="imageALoadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ge-37-bnf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,6 +77,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Load">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="imageBLoadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndK-94-mON"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -110,6 +116,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Load">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="imageCLoadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNj-2G-qW6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -146,6 +155,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Load">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="imageDLoadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VZN-7O-EZb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -182,6 +194,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Load">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="imageELoadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETj-Al-bbJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -202,6 +217,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Load All Imgae">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="imageAllLoadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osl-53-7pf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -227,6 +245,13 @@
                             <constraint firstItem="Iop-IG-30o" firstAttribute="top" secondItem="hcE-dZ-oUu" secondAttribute="bottom" id="xLs-wZ-CeU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageA" destination="ymD-c6-7ka" id="VXz-i3-o7j"/>
+                        <outlet property="imageB" destination="Xrb-qB-iqi" id="RYO-16-DEb"/>
+                        <outlet property="imageC" destination="0hE-Uc-rsN" id="QYg-SZ-aGs"/>
+                        <outlet property="imageD" destination="FGn-bF-lLu" id="oM9-xD-OJp"/>
+                        <outlet property="imageE" destination="9Wr-Dv-xuF" id="J1M-zi-xfQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
