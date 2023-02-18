@@ -20,12 +20,12 @@ extension UIImageView {
                 let data = data, error == nil,
                 let image = UIImage(data: data)
                 else {
-                    print("Download image fail : \(url)")
+                    print("Load image fail")
                     return
             }
 
             DispatchQueue.main.async() { [weak self] in
-                print("Download image success \(url)")
+                print("Load image success")
 
                 self?.contentMode = mode
                 self?.image = image
