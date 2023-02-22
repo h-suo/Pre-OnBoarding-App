@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var a: Int = 0
+    
     @IBOutlet weak var imageA: UIImageView!
     @IBOutlet weak var imageB: UIImageView!
     @IBOutlet weak var imageC: UIImageView!
